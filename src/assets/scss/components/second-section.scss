@@ -1,0 +1,103 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+.second-section {
+    min-height: 14.1rem;
+    .second-section-block {
+        display: flex;
+        flex-wrap: wrap;
+        .__item {
+            max-width: 25%;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            padding-left: 3.3%;
+            .item-img {
+                margin-top: 1.5rem;
+                margin-right: 1.5rem;
+            }
+            .item-text {
+                padding-top: 1rem;
+                p {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 1.6rem;
+                    line-height: 181%;
+                    /* identical to box height, or 181% */
+                    color: $c-text;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .second-section {
+        .second-section-block {
+            .__item {
+                min-width: 50%;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+                padding-left: 3.3%;
+                .item-img {
+                    margin-top: 1rem;
+                    margin-right: 1.5rem;
+                }
+                .item-text {
+                    padding-top: 1rem;
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 181%;
+                        color: $c-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .second-section {
+        .second-section-block {
+            .__item {
+                min-width: 50%;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                .item-img {
+                    margin-top: 1rem;
+                    margin-right: 1.5rem;
+                }
+                .item-text {
+                    padding-top: 1rem;
+                    p {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 1.4rem;
+                        line-height: 181%;
+                        color: $c-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $xs) {
+    .second-section {
+        .second-section-block {
+            .__item {
+                min-width: 100%;
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                .item-img {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+}

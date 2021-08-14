@@ -1,0 +1,184 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+.first-section {
+    &__block {
+        background-image: url('../../assets/imgs/first-section-background.jpg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        min-height: 76.5rem;
+        padding-top: 15rem;
+        .first-section-content {
+            margin: 0 auto;
+            max-width: 50rem;
+            .first-section-title {
+                width: 100%;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 54px;
+                line-height: 148%;
+                text-align: center;
+                letter-spacing: 1.8px;
+                color: $c-text;
+            }
+            .first-section-text {
+                margin-top: 4.1rem;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 167%;
+                /* or 167% */
+                text-align: center;
+                color: $c-text;
+            }
+        }
+        .regular-button {
+            @include regular-button-style;
+            max-width: 32rem;
+            min-height: 4.5rem;
+            margin: 4.1rem auto 0 auto;
+            padding: 1.3rem 0 0 10.1rem;
+            .button-link {
+                @include button-link-style;
+            }
+            transition: all 0.4s ease;
+        }
+        .regular-button:hover {
+            @include transparent-button-style;
+            .button-link {
+                color: $c-text-button2;
+            }
+        }
+        .transparent-button {
+            @include transparent-button-style;
+            margin: 2rem auto 0 auto;
+            max-width: 32rem;
+            min-height: 4.5rem;
+            padding: 1.3rem 0 0 7.7rem;
+            .button-link {
+                @include button-link-style;
+                color: $c-text-button2;
+                transition: all 0.4s ease;
+            }
+        }
+        .transparent-button:hover {
+            @include regular-button-style;
+            .button-link {
+                color: $c-text-button;
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .first-section {
+        &__block {
+            min-height: 70rem;
+            padding-top: 15rem;
+            .first-section-content {
+                .first-section-title {
+                    font-size: 4.8rem;
+                    letter-spacing: 1.5px;
+                    line-height: 130%;
+                }
+                .first-section-text {
+                    margin-top: 3rem;
+                    font-size: 1.5rem;
+                    line-height: 167%;
+                }
+            }
+            .regular-button {
+                max-width: 28rem;
+                min-height: 4.5rem;
+                margin: 6rem auto 0 auto;
+                padding-left: 8rem;
+                .button-link {
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+            }
+            .transparent-button {
+                max-width: 28rem;
+                min-height: 4.5rem;
+                padding-left: 6rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .first-section {
+        &__block {
+            min-height: 55rem;
+            padding-top: 10rem;
+            .first-section-content {
+                max-width: 40rem;
+                .first-section-title {
+                    font-size: 4rem;
+                    letter-spacing: 1.5px;
+                }
+                .first-section-text {
+                    font-size: 1.4rem;
+                }
+            }
+            .regular-button {
+                max-width: 25rem;
+                min-height: 4.3rem;
+                margin: 4rem auto 0 auto;
+                padding-left: 7.5rem;
+                .button-link {
+                    font-size: 1.2rem;
+                }
+            }
+            .transparent-button {
+                margin: 1.7rem auto 0 auto;
+                max-width: 25rem;
+                min-height: 4.3rem;
+                padding-left: 6rem;
+                .button-link {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $xxs) {
+    .first-section {
+        &__block {
+            min-height: 43rem;
+            padding-top: 6rem;
+            .first-section-content {
+                max-width: 32rem;
+                .first-section-title {
+                    font-size: 3.2rem;
+                    letter-spacing: 1.1px;
+                }
+                .first-section-text {
+                    font-size: 1.2rem;
+                }
+            }
+            .regular-button {
+                max-width: 20rem;
+                min-height: 4rem;
+                margin: 2rem auto 0 auto;
+                padding-left: 5rem;
+                padding-bottom: 1rem;
+                .button-link {}
+            }
+            .transparent-button {
+                max-width: 20rem;
+                min-height: 4rem;
+                margin: 2rem auto 0 auto;
+                padding-left: 3rem;
+                padding-bottom: 1rem;
+                .button-link {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

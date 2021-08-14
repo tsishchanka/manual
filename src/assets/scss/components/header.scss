@@ -1,0 +1,134 @@
+// для каждого компонента нужно импортить переменные, чтобы их использовать
+@import "../utils/parameters";
+@import "../utils/mixins";
+.header {
+    box-sizing: border-box;
+    position: relative;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 8rem;
+        flex-wrap: wrap;
+        .nav-left {
+            width: 50%;
+            &__list {
+                flex-wrap: wrap;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                .nav-list-item {
+                    margin-right: 2.8rem;
+                    .nav-link {
+                        @include nav-link-style;
+                        transition: color 0.5s ease;
+                    }
+                    .nav-link:hover {
+                        color: $c-text3;
+                        text-shadow: 0.05rem 0.05rem 0.05rem $c-text3;
+                    }
+                }
+            }
+        }
+        .logo {
+            .logo-img {
+                position: absolute;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                max-width: 17.2rem;
+            }
+        }
+        .nav-right {
+            display: flex;
+            justify-content: flex-end;
+            width: 45%;
+            &__list {
+                flex-wrap: wrap;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-top: 0.65rem;
+                .nav-list-item {
+                    margin-right: 2.8rem;
+                    .nav-link {
+                        @include nav-link-style;
+                        transition: color 0.5s ease;
+                    }
+                    .nav-link:hover {
+                        color: $c-text3;
+                        text-shadow: 0.05rem 0.05rem 0.05rem $c-text3;
+                    }
+                    .nav-acc-img {
+                        width: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .nav-left__list {
+        max-width: 15rem;
+        li.nav-list-item:not(:last-child) {
+            margin-bottom: 1rem;
+            margin-right: 2rem;
+        }
+    }
+    .nav-right__list {
+        li.nav-list-item {
+            margin-bottom: 1rem;
+            margin-right: 2rem;
+        }
+    }
+    .acc-img {
+        width: 1.5rem;
+    }
+}
+
+@media (max-width: $xs) {
+    .logo-img {
+        max-width: 15rem;
+    }
+    .nav-right__list {
+        max-width: 55%;
+    }
+    .nav-acc-img {
+        width: 3%;
+    }
+}
+
+@media (max-width: $xxs) {
+    .header {
+        &__row {
+            .nav-left {
+                justify-content: space-between;
+                .nav-left__list .nav-list-item .nav-link {
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    letter-spacing: 0.1rem;
+                }
+            }
+        }
+    }
+    .logo-img {
+        max-width: 12rem;
+    }
+    .nav-right {
+        justify-content: space-between;
+        .nav-right__list .nav-list-item .nav-link {
+            font-size: 1rem;
+            line-height: 1rem;
+            letter-spacing: 0.1rem;
+        }
+    }
+    .acc-img {
+        padding-top: 0.2rem;
+        max-width: 1.5rem;
+    }
+}

@@ -1,0 +1,28 @@
+// переменные 
+//GRID
+//точки адаптива
+$lg: 1469px;
+$md: 1023px;
+$sm: 767px;
+$xs: 667px;
+$xxs: 468px;
+//Цвета макета
+$c-primary:#0076af; //основной цвет макета
+$c-secondary: #0076af; //дополнительный цвет макета
+$c-text: #0B3B3C; //основной цвет текста макета
+$c-text2: #FFFFFF;
+$c-text3: #7E0707;
+$c-text-button: #FFFFFF;
+$c-text-button2: #7E0707;
+//дополнительный цвет текста макета
+$c-primary-button:#7E0707; //основной цвет макета
+// Рандомные переменные проекта
+// Размер шрифта
+$font-size-base: 10px;
+// Шрифты
+$body-font: 'Montserrat',
+sans-serif; //основной
+$headers-font: 'Montserrat',
+sans-serif; //для заголовков
+$secondary-font: 'Open Sans',
+sans-serif; //дополнительный
