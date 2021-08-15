@@ -1,0 +1,45 @@
+
+section.fourth-section
+    div.container 
+        div.fourth-section-block
+            h2.fourth-section-block__title The most effective treatments. Backed by science.
+            .fourth-section-block__content 
+                mixin fourth-section-block__item-box (args={})
+                    div.fourth-section-block__item-box
+                    img(src=args.img alt=args.title)
+                    h2=args.title
+                    p=args.text
+                    a(href=link)=name=args.link
+                .fourth-section-block__content-item          
+
+                    +fourth-section-block__item-box ({
+                        img: './assets/imgs/fourth-section-block__item-first.png',
+                        title: 'Hair Loss',
+                        text: 'Now hair loss is treatable. There are clinically proven treatments effective in 9/10 men. And we have them all here.',
+                        link: 'View Treatments',
+                    })
+
+                .fourth-section-block__content-item
+                    +fourth-section-block__item-box ({
+                        img: './assets/imgs/fourth-section-block__item-second.png',
+                        title: 'Hair Loss',
+                        text: 'Now hair loss is treatable. There are clinically proven treatments effective in 9/10 men. And we have them all here.',
+                        link: 'View Treatments',
+                    })
+
+                .fourth-section-block__content-item
+                    +fourth-section-block__item-box ({
+                        img: './assets/imgs/fourth-section-block__item-skin.png',
+                        title: 'Hair Loss',
+                        text: 'Now hair loss is treatable. There are clinically proven treatments effective in 9/10 men. And we have them all here.',
+                        link: 'View Treatments',
+                    })
+
+                .fourth-section-block__content-item
+                    +fourth-section-block__item-box ({
+                        img: './assets/imgs/fourth-section-block__content-item-daily.png',
+                        title: 'Hair Loss',
+                        text: 'Now hair loss is treatable. There are clinically proven treatments effective in 9/10 men. And we have them all here.',
+                        link: 'View Treatments',
+                    })
+                
