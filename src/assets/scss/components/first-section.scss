@@ -35,38 +35,35 @@
                 color: $c-text;
             }
         }
-        .regular-button {
-            @include regular-button-style;
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
             max-width: 32rem;
-            min-height: 4.5rem;
-            margin: 4.1rem auto 0 auto;
-            padding: 1.3rem 0 0 10.1rem;
-            .button-link {
+            .regular-button {
+                @include regular-button-style;
+                width: 100%;
+                min-height: 4.5rem;
+                margin: 4.1rem auto 0 auto;
                 @include button-link-style;
+                transition: all 0.4s ease;
             }
-            transition: all 0.4s ease;
-        }
-        .regular-button:hover {
-            @include transparent-button-style;
-            .button-link {
+            .regular-button:hover {
+                @include transparent-button-style;
                 color: $c-text-button2;
             }
-        }
-        .transparent-button {
-            @include transparent-button-style;
-            margin: 2rem auto 0 auto;
-            max-width: 32rem;
-            min-height: 4.5rem;
-            padding: 1.3rem 0 0 7.7rem;
-            .button-link {
+            .transparent-button {
+                @include transparent-button-style;
+                margin: 2rem auto 0 auto;
+                width: 100%;
+                min-height: 4.5rem;
                 @include button-link-style;
                 color: $c-text-button2;
                 transition: all 0.4s ease;
             }
-        }
-        .transparent-button:hover {
-            @include regular-button-style;
-            .button-link {
+            .transparent-button:hover {
+                @include regular-button-style;
                 color: $c-text-button;
             }
         }
@@ -90,20 +87,17 @@
                     line-height: 167%;
                 }
             }
-            .regular-button {
+            .buttons {
                 max-width: 28rem;
-                min-height: 4.5rem;
-                margin: 6rem auto 0 auto;
-                padding-left: 8rem;
-                .button-link {
+                .regular-button {
+                    min-height: 4.5rem;
+                    margin: 6rem auto 0 auto;
                     font-size: 1.4rem;
-                    text-align: center;
                 }
-            }
-            .transparent-button {
-                max-width: 28rem;
-                min-height: 4.5rem;
-                padding-left: 6rem;
+                .transparent-button {
+                    min-height: 4.5rem;
+                    font-size: 1.4rem;
+                }
             }
         }
     }
@@ -124,21 +118,16 @@
                     font-size: 1.4rem;
                 }
             }
-            .regular-button {
-                max-width: 25rem;
-                min-height: 4.3rem;
-                margin: 4rem auto 0 auto;
-                padding-left: 7.5rem;
-                .button-link {
+            .buttons {
+                max-width: 24rem;
+                .regular-button {
+                    min-height: 4.3rem;
+                    margin: 4rem auto 0 auto;
                     font-size: 1.2rem;
                 }
-            }
-            .transparent-button {
-                margin: 1.7rem auto 0 auto;
-                max-width: 25rem;
-                min-height: 4.3rem;
-                padding-left: 6rem;
-                .button-link {
+                .transparent-button {
+                    margin: 1.7rem auto 0 auto;
+                    min-height: 4.3rem;
                     font-size: 1.2rem;
                 }
             }
@@ -161,21 +150,16 @@
                     font-size: 1.2rem;
                 }
             }
-            .regular-button {
+            .buttons {
                 max-width: 20rem;
-                min-height: 4rem;
-                margin: 2rem auto 0 auto;
-                padding-left: 5rem;
-                padding-bottom: 1rem;
-                .button-link {}
-            }
-            .transparent-button {
-                max-width: 20rem;
-                min-height: 4rem;
-                margin: 2rem auto 0 auto;
-                padding-left: 3rem;
-                padding-bottom: 1rem;
-                .button-link {
+                .regular-button {
+                    min-height: 4rem;
+                    margin: 2rem auto 0 auto;
+                    font-size: 1.2rem;
+                }
+                .transparent-button {
+                    min-height: 4rem;
+                    margin: 2rem auto 0 auto;
                     font-size: 1.2rem;
                 }
             }

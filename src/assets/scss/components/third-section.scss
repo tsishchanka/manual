@@ -1,0 +1,254 @@
+                    @import "../utils/parameters";
+                    @import "../utils/mixins";
+                    .third-section {
+                        min-height: 97.7rem;
+                        .third-section-block {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 8rem auto 0 auto;
+                            align-items: center;
+                            justify-content: space-between;
+                            &__header {
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0 auto;
+                                align-items: center;
+                                justify-content: space-between;
+                                .third-section-block__header-title {
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 3.5rem;
+                                    line-height: 171%;
+                                    /* identical to box height, or 171% */
+                                    text-align: center;
+                                    letter-spacing: 0.12rem;
+                                    color: #0B3B3C;
+                                    margin-bottom: 1rem;
+                                }
+                                .third-section-block__header-text {
+                                    margin-top: 1rem;
+                                    .third-section-block__header-text-bold {
+                                        font-family: Roboto;
+                                        font-style: normal;
+                                        font-weight: bold;
+                                        font-size: 1.8rem;
+                                        line-height: 3rem;
+                                        /* identical to box height, or 167% */
+                                        text-align: center;
+                                        color: $c-text4;
+                                    }
+                                    .third-section-block__header-text-regular {
+                                        font-family: Roboto;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 18px;
+                                        line-height: 30px;
+                                        /* identical to box height, or 167% */
+                                        text-align: center;
+                                        color: $c-text;
+                                    }
+                                }
+                            }
+                            &__row {
+                                .third-section-block__row-items {
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    margin: 0 auto;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    max-width: 113rem;
+                                    position: relative;
+                                    margin-top: 4rem;
+                                    .third-section-block__row-move {
+                                        position: absolute;
+                                        left: 28%;
+                                        top: -5%;
+                                        .third-section-block__row-move_img {
+                                            transform: rotate(-2.48deg);
+                                        }
+                                    }
+                                    .third-section-block__row-item {
+                                        max-width: calc(100%/3);
+                                        .third-section-block__row-item_title {
+                                            font-family: Roboto;
+                                            font-style: normal;
+                                            font-weight: bold;
+                                            font-size: 25px;
+                                            line-height: 40px;
+                                            /* identical to box height, or 160% */
+                                            text-align: center;
+                                            letter-spacing: 0.84px;
+                                            color: $c-text;
+                                            margin-bottom: 1.3rem;
+                                        }
+                                        .third-section-block__row-item_img-first {
+                                            margin-top: -1.4rem;
+                                            max-width: 100%;
+                                        }
+                                        .third-section-block__row-first-item_text {
+                                            max-width: 31.5rem;
+                                            text-align: center;
+                                        }
+                                        .third-section-block__row-item_img-second {
+                                            margin-top: -1.7rem;
+                                            max-width: 100%;
+                                        }
+                                        .third-section-block__row-second-item_text {
+                                            max-width: 33.3rem;
+                                            text-align: center;
+                                        }
+                                        .third-section-block__row-item_img-third {
+                                            margin-top: 3rem;
+                                            max-width: 100%;
+                                        }
+                                        .third-section-block__row-third-item_text {
+                                            max-width: 33.1rem;
+                                            text-align: center;
+                                            margin-left: 2.27rem;
+                                        }
+                                        .row-item_text {
+                                            font-family: Roboto;
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            font-size: 18px;
+                                            line-height: 32px;
+                                            /* or 178% */
+                                            color: #0B3B3C;
+                                        }
+                                    }
+                                    .third-section-block__row-move-invert {
+                                        position: absolute;
+                                        left: 60%;
+                                        bottom: 36%;
+                                        .third-section-block__row-move-invert_img {
+                                            transform: matrix(1, -0.04, -0.04, -1, 0, 0);
+                                        }
+                                    }
+                                }
+                            }
+                            .third-section-block__arrow {
+                                .third-section__arrow-img {
+                                    max-width: 11rem;
+                                    max-height: 18.302rem;
+                                }
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: $md) {
+                        .third-section {
+                            max-height: 80rem;
+                            .third-section-block {
+                                margin-top: 3rem;
+                                &__header {
+                                    .third-section-block__header-title {
+                                        font-size: 3rem;
+                                        line-height: 171%;
+                                    }
+                                    .third-section-block__header-text {
+                                        margin-top: 1rem;
+                                        .third-section-block__header-text-bold {
+                                            font-size: 1.6rem;
+                                        }
+                                        .third-section-block__header-text-regular {
+                                            font-size: 1.6rem;
+                                        }
+                                    }
+                                }
+                                &__row {
+                                    .third-section-block__row-items {
+                                        .third-section-block__row-item {
+                                            width: 100%;
+                                            .third-section-block__row-item_title {
+                                                font-size: 2rem;
+                                                margin-bottom: 1rem;
+                                            }
+                                            .third-section-block__row-item_img-first {
+                                                margin-top: -1rem;
+                                            }
+                                            .third-section-block__row-item_img-second {
+                                                margin-top: -0.9rem;
+                                            }
+                                            .third-section-block__row-item_img-third {
+                                                margin-top: 1.2rem;
+                                            }
+                                            .row-item_text {
+                                                font-size: 1.5rem;
+                                                line-height: 3rem;
+                                            }
+                                        }
+                                    }
+                                }
+                                .third-section-block__arrow {
+                                    .third-section__arrow-img {
+                                        max-height: 12rem;
+                                    }
+                                }
+                                .third-section-block__row-move-invert {
+                                    position: absolute;
+                                    .third-section-block__row-move-invert_img {
+                                        max-width: 95.49px;
+                                        max-height: 87.85px;
+                                        transform: matrix(1, -0.04, -0.04, -1, 0, 0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: $sm) {
+                        .third-section {
+                            max-height: 80rem;
+                            .third-section-block {
+                                margin: 3rem auto 0 auto;
+                                &__row {
+                                    .third-section-block__row-items {
+                                        flex-direction: column;
+                                        margin: 0 auto;
+                                        align-items: center;
+                                        max-width: 100%;
+                                        position: relative;
+                                        margin-top: 4rem;
+                                        .third-section-block__row-move {
+                                            position: absolute;
+                                            .third-section-block__row-move_img {
+                                                transform: rotate(-2.48deg);
+                                            }
+                                        }
+                                        .third-section-block__row-item {
+                                            max-width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: $xs) {
+                        .third-section {
+                            .third-section-block {
+                                &__row {
+                                    .third-section-block__row-items {
+                                        .third-section-block__row-move {
+                                            position: absolute;
+                                            left: 0;
+                                            top: -5%;
+                                            .third-section-block__row-move_img {
+                                                transform: rotate(-2.48deg);
+                                            }
+                                        }
+                                        .third-section-block__row-move-invert {
+                                            position: absolute;
+                                            left: 50%;
+                                            bottom: 0;
+                                            .third-section-block__row-move-invert_img {
+                                                transform: matrix(1, -0.04, -0.04, -1, 0, 0);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
