@@ -132,7 +132,7 @@ a {
   color: #0B3B3C;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #0076af;
+    color: #E8EFE9;
     outline: none;
     text-decoration: none; }
 
@@ -190,7 +190,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-  border-color: #0076af; }
+  border-color: #E8EFE9; }
 
 textarea {
   resize: vertical;
@@ -687,7 +687,8 @@ button {
           transform: matrix(1, -0.04, -0.04, -1, 0, 0); }
     .third-section .third-section-block .third-section-block__arrow .third-section__arrow-img {
       max-width: 11rem;
-      max-height: 18.302rem; }
+      max-height: 18.7rem;
+      margin-bottom: 2.4rem; }
 
 @media (max-width: 1023px) {
   .third-section {
@@ -756,9 +757,67 @@ button {
 .fourth-section {
   display: flex;
   align-items: center;
+  margin: 0 auto;
   justify-content: space-around;
   flex-wrap: wrap;
-  min-height: 144rem; }
+  min-height: 144rem;
+  max-width: 144rem; }
+  .fourth-section .fourth-section-block .fourth-section-block__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 171%;
+    text-align: center;
+    letter-spacing: 0.012rem;
+    color: #0B3B3C;
+    margin-bottom: 4rem; }
+  .fourth-section .fourth-section-block__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 136.6rem; }
+    .fourth-section .fourth-section-block__content .fourth-section-block__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: #E8EFE9;
+      min-height: 63.4rem;
+      min-width: 49.49%;
+      margin: 0.3rem; }
+      .fourth-section .fourth-section-block__content .fourth-section-block__item .item-title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+        /* identical to box height, or 200% */
+        text-align: center;
+        letter-spacing: 0.72px;
+        color: #0B3B3C; }
+      .fourth-section .fourth-section-block__content .fourth-section-block__item p,
+      .fourth-section .fourth-section-block__content .fourth-section-block__item .item-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+        /* or 181% */
+        text-align: center;
+        color: #0B3B3C; }
+      .fourth-section .fourth-section-block__content .fourth-section-block__item a.item-link {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        text-align: center;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        color: #0B3B3C; }
 
 div.container {
   max-width: 1470px;

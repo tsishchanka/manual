@@ -3,8 +3,80 @@
 .fourth-section {
     display: flex;
     align-items: center;
+    margin: 0 auto;
     justify-content: space-around;
     flex-wrap: wrap;
     min-height: 144rem;
-    .fourth-section-block {}
+    max-width: 144rem;
+    .fourth-section-block {
+        .fourth-section-block__title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.5rem;
+            line-height: 171%;
+            text-align: center;
+            letter-spacing: 0.012rem;
+            color: $c-text;
+            margin-bottom: 4rem;
+        }
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 136.6rem;
+            .fourth-section-block__item {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                background-color: $c-primary;
+                min-height: 63.4rem;
+                min-width: 49.49%;
+                margin: 0.3rem;
+                .item-title {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 40px;
+                    /* identical to box height, or 200% */
+                    text-align: center;
+                    letter-spacing: 0.72px;
+                    color: #0B3B3C;
+                }
+                p,
+                .item-text {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 29px;
+                    /* or 181% */
+                    text-align: center;
+                    color: #0B3B3C;
+                }
+                p.item-text-first {}
+                a.item-link {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 20px;
+                    /* identical to box height, or 143% */
+                    text-align: center;
+                    letter-spacing: 2.1px;
+                    text-transform: uppercase;
+                    color: #0B3B3C;
+                }
+                //a::after {
+                //    content: '';
+                //    max-width: 16.65rem;
+                //    max-height: 0.2rem;
+                //    background: #0B3B3C;
+                //}
+            }
+        }
+    }
 }
