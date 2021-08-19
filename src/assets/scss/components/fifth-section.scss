@@ -1,0 +1,46 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+.fifth-section {
+    max-width: 140rem;
+    min-height: 57.8rem;
+    .fifth-section-block {
+        display: block;
+        &__left {
+            width: 50%;
+            .block__left-title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 60px;
+                /* identical to box height, or 167% */
+                letter-spacing: 1.2px;
+                color: #0B3B3C;
+            }
+            .block__left-text {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 29px;
+                /* or 181% */
+                color: #0B3B3C;
+            }
+            .button {
+                display: inline-block;
+                max-width: 32rem;
+                @include regular-button-style;
+                width: 100%;
+                max-height: 5rem;
+                .regular-button {
+                    @include button-link-style;
+                    transition: all 0.4s ease;
+                }
+            }
+            .block__left-text-row {}
+        }
+        &__right {
+            width: 50%;
+        }
+    }
+}
