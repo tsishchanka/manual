@@ -1,46 +1,276 @@
-@import "../utils/parameters";
-@import "../utils/mixins";
-.fifth-section {
-    max-width: 140rem;
-    min-height: 57.8rem;
-    .fifth-section-block {
-        display: block;
-        &__left {
-            width: 50%;
-            .block__left-title {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 36px;
-                line-height: 60px;
-                /* identical to box height, or 167% */
-                letter-spacing: 1.2px;
-                color: #0B3B3C;
-            }
-            .block__left-text {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 29px;
-                /* or 181% */
-                color: #0B3B3C;
-            }
-            .button {
-                display: inline-block;
-                max-width: 32rem;
-                @include regular-button-style;
-                width: 100%;
-                max-height: 5rem;
-                .regular-button {
-                    @include button-link-style;
-                    transition: all 0.4s ease;
+        @import "../utils/parameters";
+        @import "../utils/mixins";
+        .fifth-section {
+            max-width: 140rem;
+            min-height: 57.8rem;
+            margin: 0 auto;
+            .fifth-section-block {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                align-items: center;
+                justify-content: space-between;
+                background: #E8EFE9;
+                &__left {
+                    width: 50%;
+                    padding-left: 4rem;
+                    .block__left-icon {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 10px;
+                        line-height: 150%;
+                        text-align: center;
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                        color: #0B3B3C;
+                        background: #BDCDC5;
+                        max-width: 4.5rem;
+                        max-height: 2.3rem;
+                        margin-top: 11.5rem;
+                    }
+                    .block__left-title {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 60px;
+                        /* identical to box height, or 167% */
+                        letter-spacing: 1.2px;
+                        color: #0B3B3C;
+                        margin-bottom: 2.7rem;
+                        margin-top: 2.4rem;
+                    }
+                    .block__left-text {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 29px;
+                        /* or 181% */
+                        color: #0B3B3C;
+                    }
+                    .button {
+                        display: flex;
+                        max-width: 32rem;
+                        margin-bottom: 4rem;
+                        .regular-button {
+                            @include regular-button-style;
+                            width: 100%;
+                            min-height: 4.5rem;
+                            margin: 4.1rem auto 0 auto;
+                            @include button-link-style;
+                            transition: all 0.4s ease;
+                        }
+                        .regular-button:hover {
+                            @include transparent-button-style;
+                            color: $c-text-button2;
+                        }
+                    }
+                    .block__left-text-row {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 11.5rem;
+                        .text-row {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 29px;
+                            /* identical to box height, or 181% */
+                            color: #0B3B3C;
+                            margin-right: 2rem;
+                            margin-left: 0.8rem;
+                        }
+                        .done-img {}
+                    }
+                }
+                &__right {
+                    margin-left: auto;
+                    margin-right: auto;
+                    .block__right-item-wrapper {
+                        width: 50%;
+                        display: grid;
+                        grid-gap: 0.8rem 0.8rem;
+                        grid-template-columns: repeat(3, 1fr);
+                        padding-right: 4rem;
+                        margin-left: 13rem;
+                        .block__right-item-box {
+                            background: #FFFFFF;
+                            padding: 2.2rem 4.4rem 2.2rem 4.4rem;
+                            max-width: 15rem;
+                            max-height: 15rem;
+                            .right-item-img {
+                                display: block;
+                                margin: auto;
+                            }
+                            .right-item-title {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 17px;
+                                line-height: 30px;
+                                /* or 177% */
+                                color: #0B3B3C;
+                                text-align: center;
+                            }
+                        }
+                    }
                 }
             }
-            .block__left-text-row {}
         }
-        &__right {
-            width: 50%;
+        
+        @media (max-width: $lg) {
+            .fifth-section {
+                .fifth-section-block {
+                    &__left {
+                        .block__left-text-row {
+                            margin-bottom: 5rem;
+                            .text-row {
+                                font-size: 1.2rem;
+                                line-height: 2.2remx;
+                                /* identical to box height, or 181% */
+                                color: #0B3B3C;
+                                margin-right: 1rem;
+                                margin-left: 0.4em;
+                            }
+                            .done-img {}
+                        }
+                    }
+                    &__right {
+                        .block__right-item-wrapper {
+                            margin: 0 1rem;
+                            .block__right-item-box {
+                                .right-item-title {
+                                    font-size: 1.2rem;
+                                    line-height: 2rem;
+                                    /* or 177% */
+                                    color: #0B3B3C;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
-    }
-}
+        
+        @media (max-width: $lg) {
+            .fifth-section {
+                .fifth-section-block {
+                    &__left {
+                        padding-right: 4rem;
+                        width: 100%;
+                        .block__left-icon {
+                            margin-top: 5rem;
+                        }
+                        .block__left-title {
+                            font-size: 3rem;
+                            line-height: 5rem;
+                            /* identical to box height, or 167% */
+                            letter-spacing: 1.2px;
+                            color: #0B3B3C;
+                            margin-bottom: 1.5rem;
+                            margin-top: 1.5rem;
+                        }
+                        .block__left-text {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 29px;
+                            /* or 181% */
+                            color: #0B3B3C;
+                        }
+                        .button {
+                            max-width: 25rem;
+                            margin-bottom: 2rem;
+                            .regular-button {
+                                @include regular-button-style;
+                                width: 100%;
+                                min-height: 4.2rem;
+                                margin: 2.5rem auto 0 auto;
+                                @include button-link-style;
+                                transition: all 0.4s ease;
+                            }
+                        }
+                    }
+                    &__right {
+                        margin-bottom: 4rem;
+                        .block__right-item-wrapper {
+                            width: 100%;
+                            align-items: center;
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        @media (max-width: $xs) {
+            .fifth-section {
+                .fifth-section-block {
+                    &__left {
+                        text-align: center;
+                        .block__left-title {
+                            font-size: 2.8rem;
+                            line-height: 5rem;
+                            /* identical to box height, or 167% */
+                            letter-spacing: 1.2px;
+                            color: #0B3B3C;
+                            margin-bottom: 1rem;
+                            margin-top: 1rem;
+                        }
+                        .button {
+                            max-width: 20rem;
+                            margin: 0 auto;
+                        }
+                        .block__left-text-row {
+                            flex-direction: column;
+                            margin-bottom: 1rem;
+                            margin-top: 1rem;
+                            .text-row {
+                                font-size: 1.2rem;
+                                line-height: 2.2remx;
+                            }
+                            .done-img {
+                                display: none;
+                            }
+                        }
+                    }
+                    &__right {
+                        margin-left: auto;
+                        margin-right: auto;
+                        .block__right-item-wrapper {
+                            width: 50%;
+                            .block__right-item-box {
+                                background: #FFFFFF;
+                                padding: 1.1rem 2.2rem 1.1rem 2.2rem;
+                                max-width: 10rem;
+                                max-height: 10rem;
+                                .right-item-img {
+                                    display: block;
+                                    margin: auto;
+                                    max-width: 10rem;
+                                }
+                                .right-item-title {
+                                    font-size: 12px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        @media (max-width: $xs) {
+            .fifth-section {
+                min-height: 30rem;
+                .fifth-section-block {
+                    &__right {
+                        display: none;
+                    }
+                }
+            }
+        }

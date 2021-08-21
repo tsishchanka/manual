@@ -2,16 +2,70 @@ section.fifth-section
     div.container 
         div.fifth-section-block
             .fifth-section-block__left
+                h2.block__left-icon New
                 h2.block__left-title Manual Wellbeing
                 span.block__left-text Our new offering is a holistic plan to improve your health with recommendations
                 span.block__left-text from medical experts, as well as tracking and ongoing clinician support.
                 .button
                     a(href="#").regular-button VIEW MORE
-                .block__left-text-row 
-                    span.text-row Online consultation
 
+                .block__left-text-row
+                    img(src="./assets/imgs/fifth-section-done.png" alt="done").done-img
+                    span.text-row  Online consultation
+                    
+                    img(src="./assets/imgs/fifth-section-done.png" alt="done").done-img
                     span.text-row Personalised health plan
 
+                    img(src="./assets/imgs/fifth-section-done.png" alt="done").done-img
                     span.text-row Tracking & Clinician support   
 
             .fifth-section-block__right
+                .block__right-item-wrapper
+                    mixin block__right-item (args={})
+                        .block__right-item-box 
+                            img(src=args.img alt=args.title).right-item-img
+                            h2.right-item-title=args.title                 
+                    
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-hair.png',
+                        title: 'Hair',
+                    })
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-immunity.png',
+                        title: 'Immunity',
+                    })
+                    
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-sleep.png',
+                        title: 'Sleep',
+                    })
+
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-sex-health.png',
+                        title: 'Sex health',
+                    })
+
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-brain.png',
+                        title: 'Brain',
+                    })
+
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-digestion.png',
+                        title: 'Digestion',
+                    })
+
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-heart.png',
+                        title: 'Heart',
+                    })
+
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-muscles.png',
+                        title: 'Muscles',
+                    })
+
+                    +block__right-item ({
+                        img: './assets/imgs/fifth-section-skin.png',
+                        title: 'Skin',
+                    })
