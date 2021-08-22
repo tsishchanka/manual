@@ -1814,6 +1814,129 @@ button {
         line-height: 143%;
         position: relative; } }
 
+.twelfth-section .twelfth-section-block {
+  background: #0B3B3C;
+  min-height: 57rem;
+  max-width: 144rem; }
+  .twelfth-section .twelfth-section-block__map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 22rem;
+    align-items: center;
+    padding-top: 4rem;
+    min-height: 29.9rem; }
+    .twelfth-section .twelfth-section-block__map .map-first-col .first-col-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      /* identical to box height, or 140% */
+      letter-spacing: 2.7px;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+    .twelfth-section .twelfth-section-block__map .map-first-col .first-col-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      /* identical to box height, or 180% */
+      letter-spacing: 0.84px;
+      color: #6D8A83; }
+    .twelfth-section .twelfth-section-block__map .map-first-col .first-col-contacts .contacts-tel .tel-number {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      /* identical to box height, or 180% */
+      letter-spacing: 0.84px;
+      color: #FFFFFF; }
+    .twelfth-section .twelfth-section-block__map .map-first-col .first-col-contacts .contacts-tel .worktime {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 22px;
+      /* identical to box height, or 180% */
+      letter-spacing: 0.72px;
+      color: #6D8A83; }
+    .twelfth-section .twelfth-section-block__map .map-first-col .first-col-contacts .contacts-mail .mail-link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 25px;
+      /* identical to box height, or 194% */
+      letter-spacing: 0.84px;
+      color: #FFFFFF; }
+    .twelfth-section .twelfth-section-block__map .map-first-col .first-col-contacts .contacts-mail .worktime {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 22px;
+      /* identical to box height, or 180% */
+      letter-spacing: 0.72px;
+      color: #6D8A83; }
+    .twelfth-section .twelfth-section-block__map .map-menu-col .map-menu-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 140% */
+      letter-spacing: 2.1px;
+      text-transform: uppercase;
+      color: #6D8A83; }
+    .twelfth-section .twelfth-section-block__map .map-menu-col .map-columns-links .maip-link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 25px;
+      /* identical to box height, or 194% */
+      letter-spacing: 0.84px;
+      color: #FFFFFF; }
+  .twelfth-section .twelfth-section-block__info {
+    margin: 0 22rem; }
+    .twelfth-section .twelfth-section-block__info .info-social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 4rem 1rem; }
+      .twelfth-section .twelfth-section-block__info .info-social .info-social-media .social-media {
+        padding: 0 0.55rem; }
+    .twelfth-section .twelfth-section-block__info .info-legacy .info-item-link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 22px;
+      /* identical to box height, or 180% */
+      letter-spacing: 0.72px;
+      color: #FFFFFF; }
+    .twelfth-section .twelfth-section-block__info .footer-info {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 22px;
+      /* identical to box height, or 196% */
+      letter-spacing: 0.72px;
+      color: #6D8A83; }
+    .twelfth-section .twelfth-section-block__info .rights {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 22px;
+      /* identical to box height, or 180% */
+      letter-spacing: 0.72px;
+      color: #6D8A83; }
+
 div.container {
   max-width: 1470px;
   margin: 0 auto;

@@ -1,5 +1,159 @@
 @import "../utils/parameters";
 @import "../utils/mixins";
 .twelfth-section {
-    .twelfth-section-block {}
+    .twelfth-section-block {
+        background: #0B3B3C;
+        min-height: 57rem;
+        max-width: 144rem;
+        &__map {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 22rem;
+            align-items: center;
+            padding-top: 4rem;
+            min-height: 29.9rem;
+            .map-first-col {
+                .first-col-title {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    /* identical to box height, or 140% */
+                    letter-spacing: 2.7px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                .first-col-text {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 25px;
+                    /* identical to box height, or 180% */
+                    letter-spacing: 0.84px;
+                    color: #6D8A83;
+                }
+                .first-col-contacts {
+                    .contacts-tel {
+                        .tel-number {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 25px;
+                            /* identical to box height, or 180% */
+                            letter-spacing: 0.84px;
+                            color: #FFFFFF;
+                        }
+                        .worktime {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 22px;
+                            /* identical to box height, or 180% */
+                            letter-spacing: 0.72px;
+                            color: #6D8A83;
+                        }
+                    }
+                    .contacts-mail {
+                        .mail-link {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 25px;
+                            /* identical to box height, or 194% */
+                            letter-spacing: 0.84px;
+                            color: #FFFFFF;
+                        }
+                        .worktime {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 22px;
+                            /* identical to box height, or 180% */
+                            letter-spacing: 0.72px;
+                            color: #6D8A83;
+                        }
+                    }
+                }
+            }
+            .map-menu-col {
+                .map-menu-title {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    /* identical to box height, or 140% */
+                    letter-spacing: 2.1px;
+                    text-transform: uppercase;
+                    color: #6D8A83;
+                }
+                .map-columns-links {
+                    .maip-link {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 25px;
+                        /* identical to box height, or 194% */
+                        letter-spacing: 0.84px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        &__info {
+            margin: 0 22rem;
+            .info-social {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 4rem 1rem;
+                .info-logo {}
+                .info-social-media {
+                    .social-media {
+                        padding: 0 0.55rem
+                    }
+                }
+            }
+            .info-legacy {
+                .info-item-link {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 22px;
+                    /* identical to box height, or 180% */
+                    letter-spacing: 0.72px;
+                    color: #FFFFFF;
+                }
+            }
+            .footer-info {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 22px;
+                /* identical to box height, or 196% */
+                letter-spacing: 0.72px;
+                color: #6D8A83;
+            }
+            .rights {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 22px;
+                /* identical to box height, or 180% */
+                letter-spacing: 0.72px;
+                color: #6D8A83;
+            }
+        }
+    }
 }
