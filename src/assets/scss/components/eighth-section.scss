@@ -1,0 +1,277 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+.eighth-section {
+    .eighth-section-block {
+        &__title-wrapper {
+            max-width: 82.3rem;
+            margin: 12rem auto 3rem;
+            align-items: center;
+            .eighth-section-block__title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 3.5rem;
+                line-height: 171%;
+                text-align: center;
+                letter-spacing: 1.2px;
+                color: #0B3B3C;
+            }
+            .eighth-section-block__text {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 43px;
+                /* or 179% */
+                text-align: center;
+                letter-spacing: 0.72px;
+                color: #0B3B3C;
+            }
+            .team-link {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 43px;
+                /* or 179% */
+                text-align: center;
+                letter-spacing: 0.72px;
+                color: #7E0707;
+            }
+        }
+        &__gallery {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 90.25rem;
+            margin: 0 auto 4.9rem;
+            .eighth-section-gallery-item {
+                .eighth-section-name {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 32px;
+                    /* identical to box height, or 178% */
+                    color: #0B3B3C;
+                }
+                .eighth-section-position {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 29px;
+                    /* identical to box height, or 181% */
+                    color: #91AB9F;
+                }
+            }
+        }
+        &__consult {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 115rem;
+            border-top: 0.1rem solid #BDCDC5;
+            margin: 0 auto;
+            .consult-wrapper {
+                display: flex;
+                flex-wrap: nowrap;
+                margin: 4.63rem 7.5rem 4.47rem 0;
+                .consult-call {
+                    padding: 1.6rem 0.9rem 1.6rem 2.4rem;
+                }
+                .consult-content {
+                    .consult-title {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 43px;
+                        /* identical to box height, or 215% */
+                        letter-spacing: 0.72px;
+                        color: #0B3B3C;
+                    }
+                    .consult-text {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 29px;
+                        /* identical to box height, or 193% */
+                        color: #91AB9F;
+                    }
+                }
+            }
+            .consult-button {
+                padding-left: 2.4rem;
+                min-height: 5.1rem;
+                .regular-button {
+                    @include regular-button-style;
+                    @include button-link-style;
+                    transition: all 0.4s ease;
+                    padding: 1.5rem 6.8rem;
+                    font-size: 14px;
+                    line-height: 143%;
+                }
+                .regular-button:hover {
+                    @include transparent-button-style;
+                    color: $c-text-button2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .eighth-section {
+        .eighth-section-block {
+            &__title-wrapper {
+                margin: 5rem auto 3rem;
+                .eighth-section-block__title {
+                    font-size: 3.2rem;
+                    letter-spacing: 1.1px;
+                }
+                .eighth-section-block__text {
+                    font-size: 2.2rem;
+                    line-height: 179%;
+                }
+                .team-link {
+                    font-size: 2.2rem;
+                    line-height: 179%;
+                }
+            }
+            &__gallery {
+                max-width: 85rem;
+                .eighth-section-gallery-item {
+                    .eighth-section-name {
+                        font-size: 1.6rem;
+                        line-height: 178%;
+                    }
+                    .eighth-section-position {
+                        font-size: 1.4rem;
+                        line-height: 181%;
+                    }
+                }
+            }
+            &__consult {
+                max-width: 100rem;
+                padding: 3.5rem 7rem 4rem 2.4rem;
+                .consult-wrapper {
+                    .consult-call {
+                        padding: 1.6rem 0.9rem 1.6rem 2rem;
+                    }
+                    .consult-content {
+                        .consult-title {
+                            font-size: 1.8rem;
+                            line-height: 215%;
+                        }
+                        .consult-text {
+                            font-size: 1.4rem;
+                            line-height: 193%;
+                        }
+                    }
+                }
+                .consult-button {
+                    .regular-button {
+                        min-height: 4.5rem;
+                        margin: 4.1rem auto 0 auto;
+                        padding: 1.5rem 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .eighth-section {
+        .eighth-section-block {
+            &__title-wrapper {
+                margin: 0 auto 3rem;
+                .eighth-section-block__title {
+                    font-size: 3rem;
+                    letter-spacing: 1px;
+                }
+                .eighth-section-block__text {
+                    font-size: 2rem;
+                    line-height: 179%;
+                }
+                .team-link {
+                    font-size: 2rem;
+                    line-height: 179%;
+                }
+            }
+            &__consult {
+                padding: 0 7rem 4rem 2.4rem;
+                .consult-wrapper {
+                    .consult-call {
+                        padding: 1.6rem 0.9rem 1.6rem 2rem;
+                    }
+                    .consult-content {
+                        .consult-title {
+                            font-size: 1.8rem;
+                            line-height: 215%;
+                        }
+                        .consult-text {
+                            font-size: 1.4rem;
+                            line-height: 193%;
+                        }
+                    }
+                }
+                .consult-button {
+                    .regular-button {
+                        min-height: 4.5rem;
+                        margin: 4.1rem auto 0 auto;
+                        padding: 1.5rem 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $xxs) {
+    .eighth-section {
+        .eighth-section-block {
+            &__title-wrapper {
+                margin: 1rem auto 3rem;
+                .eighth-section-block__title {
+                    font-size: 2.6rem;
+                    letter-spacing: 1px;
+                }
+                .eighth-section-block__text {
+                    font-size: 1.6rem;
+                }
+                .team-link {
+                    font-size: 1.6rem;
+                }
+            }
+            &__consult {
+                padding: 0 7rem 4rem 2.4rem;
+                .consult-wrapper {
+                    .consult-content {
+                        .consult-title {
+                            font-size: 1.6rem;
+                            line-height: 215%;
+                        }
+                        .consult-text {
+                            font-size: 1.2rem;
+                            line-height: 193%;
+                        }
+                    }
+                }
+                .consult-button {
+                    margin: 0 auto;
+                    .regular-button {
+                        min-height: 4.5rem;
+                        margin: 4rem auto 0 auto;
+                        padding: 1.5rem 3rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

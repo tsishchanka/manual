@@ -1,0 +1,40 @@
+section.eighth-section
+    div.container 
+        div.eighth-section-block
+            .eighth-section-block__title-wrapper
+                h2.eighth-section-block__title Meet our medical team
+                p.eighth-section-block__text Enabling the mission of revolutionising how men approach health, they are at the core of the men’s wellness platform.
+                    a(href="#").team-link  Meet our team.
+                
+            
+            mixin eighth-section-block (args={})
+                .eighth-section-gallery-item 
+                    img(src=args.img alt=args.title).eighth-section-photo
+                    h2.eighth-section-name=args.name
+                    p.eighth-section-position=args.position
+
+            .eighth-section-block__gallery
+                +eighth-section-block({
+                    img: './assets/imgs/eighth-section-earim.jpg',
+                    name: 'Earim Chaudry, MD',
+                    position: 'Medical Director',
+                })
+                +eighth-section-block({
+                    img: './assets/imgs/eighth-section-ryan.jpg',
+                    name: 'Ryan Benbow',
+                    position: 'Pharmacist, Ind. Prescriber',
+                })
+                +eighth-section-block({
+                    img: './assets/imgs/eighth-section-sohem.jpg',
+                    name: 'Soheb Ganchi',
+                    position: 'Pharmacist, Ind. Prescriber',
+                })      
+            .eighth-section-block__consult
+                .consult-wrapper
+                    .consult-call
+                        img(src="./assets/imgs/eighth-section-call.png" alt="call").call-img    
+                    .consult-content 
+                        h2.consult-title Get a free consultation
+                        span.consult-text Speak with one of our clinicians and get personalised advice. Monday to Friday 9am-4:30pm
+                .consult-button
+                    a(href="#").regular-button Book Consultation         
