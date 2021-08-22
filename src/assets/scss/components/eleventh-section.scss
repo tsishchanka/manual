@@ -1,0 +1,159 @@
+    @import "../utils/parameters";
+    @import "../utils/mixins";
+    .eleventh-section {
+        .eleventh-section-block {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+            overflow: hidden;
+            &__content {
+                max-width: 55.8rem;
+                .eleventh-section-block__content-title {
+                    margin: 9.91rem auto 3.6rem;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 150%;
+                    text-align: center;
+                    letter-spacing: 1.2px;
+                    color: #0B3B3C;
+                }
+                .eleventh-section-block__content-text {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 23px;
+                    line-height: 187%;
+                    text-align: center;
+                    letter-spacing: 0.72px;
+                    color: #0B3B3C;
+                    margin-bottom: 3.4rem;
+                }
+            }
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                align-items: center;
+                overflow: hidden;
+                .info-item-box {
+                    margin: 0 0.5rem 10rem;
+                    min-height: 55.5rem;
+                    .info-item-wrapper {
+                        padding-top: 2.4rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        min-height: 20.5rem;
+                        max-width: 26.3rem;
+                        .info-item-title {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 167%;
+                            letter-spacing: 0.72px;
+                            color: #0B3B3C;
+                        }
+                        .info-item-link {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 143%;
+                            letter-spacing: 2.1px;
+                            text-transform: uppercase;
+                            color: #0B3B3C;
+                            margin-bottom: 0;
+                            position: relative;
+                        }
+                        .info-item-link::after {
+                            content: '';
+                            width: 40%;
+                            height: 0.2rem;
+                            background: #0B3B3C;
+                            position: absolute;
+                            bottom: 0;
+                            left: -0.5rem;
+                            transition: width .4s ease-in-out;
+                        }
+                        .info-item-link:hover::after {
+                            background: $c-primary-button;
+                            height: 0.3rem;
+                        }
+                        .info-item-link:hover {
+                            color: $c-text3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: $lg) {
+        .eleventh-section {
+            .eleventh-section-block {
+                &__content {
+                    .eleventh-section-block__content-title {
+                        margin: 5rem auto 3.6rem;
+                        font-size: 3.6rem;
+                    }
+                    .eleventh-section-block__content-text {
+                        font-size: 1.8rem;
+                    }
+                }
+                &__info {
+                    .info-item-box {
+                        margin: 0 0.5rem 5rem;
+                        .info-item-wrapper {
+                            padding-top: 2rem;
+                            min-height: 15rem;
+                            .info-item-title {
+                                font-size: 1.8rem;
+                            }
+                            .info-item-link {
+                                font-size: 1.2rem;
+                                line-height: 143%;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: $xs) {
+        .eleventh-section {
+            .eleventh-section-block {
+                &__content {
+                    .eleventh-section-block__content-title {
+                        margin: 3.6rem auto 3.6rem;
+                        font-size: 3.4rem;
+                    }
+                    .eleventh-section-block__content-text {
+                        font-size: 1.6rem;
+                    }
+                }
+                &__info {
+                    .info-item-box {
+                        margin: 0 0.5rem 2rem;
+                        .info-item-wrapper {
+                            padding-top: 2rem;
+                            min-height: 12rem;
+                            .info-item-title {
+                                font-size: 1.6rem;
+                            }
+                            .info-item-link {
+                                font-size: 1.2rem;
+                                line-height: 143%;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

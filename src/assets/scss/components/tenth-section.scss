@@ -1,0 +1,88 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+.tenth-section {
+    .tenth-section-block {
+        min-height: 13rem;
+        background: #F3F7F4;
+        align-items: center;
+        margin: 0 auto;
+        &__buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 47.6rem;
+            align-items: center;
+            margin: 0 auto;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            .regular-button-first {
+                @include regular-button-style;
+                @include button-link-style;
+                transition: all 0.4s ease;
+                padding: 1.5rem 7.2rem;
+                font-size: 14px;
+                line-height: 143%;
+                width: 22.8rem;
+                margin: 2rem 1rem 2rem 0;
+            }
+            .regular-button-first:hover {
+                @include transparent-button-style;
+                color: $c-text-button2;
+            }
+            .regular-button-second {
+                @include regular-button-style;
+                @include button-link-style;
+                transition: all 0.4s ease;
+                padding: 1.5rem 3.7rem;
+                font-size: 14px;
+                line-height: 143%;
+                width: 22.8rem;
+                margin: 2rem 0 2rem 1rem;
+            }
+            .regular-button-second:hover {
+                @include transparent-button-style;
+                color: $c-text-button2;
+            }
+        }
+    }
+}
+
+@media (max-width: $xs) {
+    .tenth-section {
+        .tenth-section-block {
+            &__buttons {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                .regular-button-first {
+                    margin: 2rem 0;
+                    font-size: 1.2rem;
+                }
+                .regular-button-second {
+                    margin: 2rem 0;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $xxs) {
+    .tenth-section {
+        .tenth-section-block {
+            &__buttons {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                .regular-button-first {
+                    max-width: 25rem;
+                    margin: 2rem 0;
+                    font-size: 1rem;
+                }
+                .regular-button-second {
+                    max-width: 25rem;
+                    margin: 2rem 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
